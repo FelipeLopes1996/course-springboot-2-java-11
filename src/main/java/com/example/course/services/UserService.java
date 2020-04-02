@@ -20,7 +20,7 @@ public class UserService {
 	}
 
 	public User findById(Long id) {
-		Optional<User> obj = Optional.empty();
+		Optional<User> obj = repository.findById(id);
 		return obj.get();
 	}
 }
